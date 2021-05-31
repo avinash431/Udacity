@@ -1,3 +1,6 @@
+from functools import wraps
+import time
+
 def timer(fn):
     @wraps(fn)
     def measure_time(*args, **kwargs):
